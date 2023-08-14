@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<!-- soccer/project/  07 Jan 2020 03:36:49 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+<title>Falcon Ads - Dashboard</title>
+
+<!-- Bootstrap Core and vandor -->
+<link rel="stylesheet" href="plugins2/bootstrap/css/bootstrap.min.css" />
+
+<!-- Plugins css -->
+<link rel="stylesheet" href="plugins2/charts-c3/c3.min.css"/>
+
+<!-- Core css -->
+<link rel="stylesheet" href="css2/main.css"/>
+<link rel="stylesheet" href="css2/theme1.css"/>
+</head>
+
+<body class="font-montserrat">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+
+<div id="main_content">
+
+    <div id="header_top" class="header_top">
+        <div class="container">
+            <div class="hleft">
+                <a class="header-brand" href="https://frankfrim.github.io/Juna-Store-KYC/"><i class="fa fa-soccer-ball-o brand-logo"></i></a>
+                <div class="dropdown">
+                 </div>
+            </div>
+            <div class="hright">
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
+                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <div id="rightsidebar" class="right_sidebar">
+        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
+        <div class="p-4">
+            <div class="mb-4">
+                <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
+                <div class="custom-controls-stacked font_setting">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-opensans">
+                        <span class="custom-control-label">Open Sans Font</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
+                        <span class="custom-control-label">Montserrat Google Font</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-roboto">
+                        <span class="custom-control-label">Robot Google Font</span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-4">
+                <h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
+                <div class="custom-controls-stacked arrow_option">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
+                        <span class="custom-control-label">A</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-b">
+                        <span class="custom-control-label">B</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-c" checked="">
+                        <span class="custom-control-label">C</span>
+                    </label>
+                </div>
+                <h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
+                <div class="custom-controls-stacked list_option">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-a" checked="">
+                        <span class="custom-control-label">A</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-b">
+                        <span class="custom-control-label">B</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-c">
+                        <span class="custom-control-label">C</span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
+                <ul class="setting-list list-unstyled mt-1 setting_switch">
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Night Mode</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Fix Navbar top</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Header Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader" checked="">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Min Sidebar Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Sidebar Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Icon Color</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Gradient Color</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Box Shadow</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">RTL Support</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Box Layout</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="d-block">Storage <span class="float-right">77%</span></label>
+                <div class="progress progress-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
+                </div>
+                <button type="button" class="btn btn-primary btn-block mt-3">Upgrade Storage</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme_div">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-group list-unstyled">
+                    <li class="list-group-item mb-2">
+                        <p>Default Theme</p>
+                        <a href="https://frankfrim.github.io/Juna-Store-KYC/"><img src="assets2/images/themes/default.png" class="img-fluid" /></a>
+                    </li>
+                    <li class="list-group-item mb-2">
+                        <p>Night Mode Theme</p>
+                        <a href="project-dark/index.html"><img src="assets2/images/themes/dark.png" class="img-fluid" /></a>
+                    </li>                    
+                    <li class="list-group-item mb-2">
+                        <p>RTL Version</p>
+                        <a href="project-rtl/index.html"><img src="assets2/images/themes/rtl.png" class="img-fluid" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+                <li>
+                   
+            </ul>
+        </div>
+    </div>
+
+    <div id="left-sidebar" class="sidebar ">
+        <h5 class="brand-name">Offer <a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+        <nav id="left-sidebar-nav" class="sidebar-nav">
+            <ul class="metismenu">
+                <li class="g_heading">Falcon Ads</li>
+                <li><a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>                        
+                <li><a href="apk.html"><i class="fa fa-list-ol"></i><span>APK</span></a></li>
+                <li class="active"><a href="website.html"><i class="fa fa-list-ol"></i><span>Website and YouTube</span></a></li>
+   
+                <li>
+                    <a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-lock"></i><span>Authentication</span></a>
+                    <ul>
+                        
+                        <li><a href="register.html">Get Search ID</a></li>
+                           
+                    </ul>
+                </li>
+             </ul>
+        </nav>        
+    </div>
+
+    <div class="page">
+        <div id="page_top" class="section-body top_dark">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
+                        <h1 class="page-title">Dashboard</h1>                        
+                    </div>
+                    <div class="right">
+                        <div class="input-icon xs-hide mr-4">
+                          </div>
+                        <div class="notification d-flex">
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="assets2/images/flags/us.svg">English</a>
+                                    <div class="dropdown-divider"></div>
+                                       </div>
+                            </div>
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <ul class="right_chat list-unstyled w350 p-0">
+                                        <li class="online">
+                                                <div class="media-body">
+                                             </div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                                 <div class="">
+                                            </div>
+                                            </a>                            
+                                        </li>
+                                        <li class="offline">
+                                                <div class="">
+                                                 </div>
+                                            </a>                            
+                                        </li>
+                                        <li class="online">
+                                                 <div class="">
+                                                </div>
+                                            </a>                            
+                                        </li>                        
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                            </div>
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-primary nav-unread"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <ul class="list-unstyled feeds_widget">
+                                        <li>
+                                            <div class="feeds-left"></div>
+                                            <div class="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                              </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                             </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                              </div>
+                                        </li>                                   
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle=""></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.44339" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.44339" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/imageinfo.js?v=3.3.44339" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/file-uploader/fileuploader.js?v=3.3.44339"></script>
+<script src="https://cdn03.jotfor.ms/js/payments/validategateways.js?v=3.3.44339" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/7207d249b7d/for-form-branding-footer.js?v=3.3.44339" type="text/javascript" defer></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.newPaymentUI = true;
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_5').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_9').setAttribute('tabindex',0);
+      JotForm.shuffleOptions("11");
+if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex',0);
+      JotForm.description('input_13', 'Make sure this video is the same as the link provided. This will help in verification process');
+      JotForm.alterTexts(undefined);
+      setTimeout(function() {
+          JotForm.initMultipleUploads();
+      }, 2);
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Website and YouTube Video","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"email","qid":"3","subLabel":"example@example.com","text":"Email","type":"control_email"},{"name":"pageBreak","qid":"4","text":"Page Break","type":"control_pagebreak"},{"description":"","name":"yourSearch","qid":"5","subLabel":"","text":"Your Search ID","type":"control_textbox"},{"name":"pageBreak6","qid":"6","text":"Page Break","type":"control_pagebreak"},{"description":"","name":"adTitle","qid":"7","subLabel":"","text":"Ad title","type":"control_textbox"},{"description":"","name":"shortDescription","qid":"8","subLabel":"","text":"Short Description","type":"control_textbox"},{"description":"","name":"adsDescription","qid":"9","subLabel":"","text":"Ads Description","type":"control_textarea"},{"name":"pageBreak10","qid":"10","text":"Page Break","type":"control_pagebreak"},{"description":"","name":"whatDo","qid":"11","text":"What do you want to promote","type":"control_radio"},{"description":"","name":"websiteOr","qid":"12","subLabel":"","text":"Website or YouTube URL","type":"control_textbox"},{"description":"Make sure this video is the same as the link provided. This will help in verification process","name":"youtubeVideo","qid":"13","subLabel":"Ignore when working with website","text":"YouTube Video","type":"control_fileupload"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.44339"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.44339" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.44339" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/donationBox.css?v=3.3.44339">
+<form class="jotform-form" action="https://submit.jotform.com/submit/232247773173055" method="post" enctype="multipart/form-data" name="form_232247773173055" id="232247773173055" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="232247773173055" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-small">
+          <div class="header-text httac htvam">
+            <h3 id="header_1" class="form-header" data-component="header">Website and YouTube Video</h3>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_3"><label class="form-label form-label-top form-label-auto" id="label_3" for="input_3"> Email<span class="form-required">*</span> </label>
+        <div id="cid_3" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_3" name="q3_email" class="form-textbox validate[required, Email]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_3 sublabel_input_3" required="" /><label class="form-sub-label" for="input_3" id="sublabel_input_3" style="min-height:13px" aria-hidden="false">example@example.com</label></span> </div>
+      </li>
+      <li id="cid_4" class="form-input-wide" data-type="control_pagebreak">
+        <div class="form-pagebreak" data-component="pagebreak">
+          <div class="form-pagebreak-back-container"><button id="form-pagebreak-back_4" type="button" class="form-pagebreak-back  jf-form-buttons" data-component="pagebreak-back">Back</button></div>
+          <div class="form-pagebreak-next-container"><button id="form-pagebreak-next_4" type="button" class="form-pagebreak-next  jf-form-buttons" data-component="pagebreak-next">Next</button></div>
+          <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_4"></div>
+        </div>
+      </li>
+    </ul>
+    <ul class="form-section page-section" style="display:none;">
+      <li class="form-line jf-required" data-type="control_textbox" id="id_5"><label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> Your Search ID<span class="form-required">*</span> </label>
+        <div id="cid_5" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_5" name="q5_yourSearch" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_5" required="" /> </div>
+      </li>
+      <li id="cid_6" class="form-input-wide" data-type="control_pagebreak">
+        <div class="form-pagebreak" data-component="pagebreak">
+          <div class="form-pagebreak-back-container"><button id="form-pagebreak-back_6" type="button" class="form-pagebreak-back  jf-form-buttons" data-component="pagebreak-back">Back</button></div>
+          <div class="form-pagebreak-next-container"><button id="form-pagebreak-next_6" type="button" class="form-pagebreak-next  jf-form-buttons" data-component="pagebreak-next">Next</button></div>
+          <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_6"></div>
+        </div>
+      </li>
+    </ul>
+    <ul class="form-section page-section" style="display:none;">
+      <li class="form-line jf-required" data-type="control_textbox" id="id_7"><label class="form-label form-label-top form-label-auto" id="label_7" for="input_7"> Ad title<span class="form-required">*</span> </label>
+        <div id="cid_7" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_7" name="q7_adTitle" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_7" required="" /> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_8"><label class="form-label form-label-top form-label-auto" id="label_8" for="input_8"> Short Description<span class="form-required">*</span> </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_8" name="q8_shortDescription" data-type="input-textbox" class="form-textbox validate[required, minCharLimit]" data-defaultvalue="" style="width:310px" size="310" value="" maxLength="90" data-minlength="10" data-component="textbox" aria-labelledby="label_8" required="" /> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textarea" id="id_9"><label class="form-label form-label-top form-label-auto" id="label_9" for="input_9"> Ads Description<span class="form-required">*</span> </label>
+        <div id="cid_9" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-textarea-limit"><span><textarea id="input_9" class="form-textarea validate[required]" name="q9_adsDescription" style="width:648px;height:163px" data-component="textarea" required="" aria-labelledby="label_9"></textarea>
+              <div class="form-textarea-limit-indicator"><span data-limit="150" type="Words" data-minimum="40" data-typeminimum="Words" id="input_9-limit">0/150</span></div>
+            </span></div>
+        </div>
+      </li>
+      <li id="cid_10" class="form-input-wide" data-type="control_pagebreak">
+        <div class="form-pagebreak" data-component="pagebreak">
+          <div class="form-pagebreak-back-container"><button id="form-pagebreak-back_10" type="button" class="form-pagebreak-back  jf-form-buttons" data-component="pagebreak-back">Back</button></div>
+          <div class="form-pagebreak-next-container"><button id="form-pagebreak-next_10" type="button" class="form-pagebreak-next  jf-form-buttons" data-component="pagebreak-next">Next</button></div>
+          <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_10"></div>
+        </div>
+      </li>
+    </ul>
+    <ul class="form-section page-section" style="display:none;">
+      <li class="form-line jf-required" data-type="control_radio" id="id_11"><label class="form-label form-label-top form-label-auto" id="label_11" for="input_11"> What do you want to promote<span class="form-required">*</span> </label>
+        <div id="cid_11" class="form-input-wide jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_11" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_11" class="form-radio validate[required]" id="input_11_0" name="q11_whatDo" value="YouTube" required="" /><label id="label_input_11_0" for="input_11_0">YouTube</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_11" class="form-radio validate[required]" id="input_11_1" name="q11_whatDo" checked="" value="Website" required="" /><label id="label_input_11_1" for="input_11_1">Website</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_12"><label class="form-label form-label-top form-label-auto" id="label_12" for="input_12"> Website or YouTube URL<span class="form-required">*</span> </label>
+        <div id="cid_12" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_12" name="q12_websiteOr" data-type="input-textbox" class="form-textbox validate[required, Url]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_12" required="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_fileupload" id="id_13"><label class="form-label form-label-top form-label-auto" id="label_13" for="input_13"> YouTube Video </label>
+        <div id="cid_13" class="form-input-wide" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">YouTube Video<div class="jfUpload-heading forDesktop">Drag and drop files here</div>
+                      <div class="jfUpload-heading forMobile">Choose a file</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_13" name="q13_youtubeVideo[]" multiple="" class="form-upload-multiple" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif, mp4, " data-file-maxsize="10850000000000004" data-file-minsize="0" data-file-limit="" data-component="fileupload" aria-label="YouTube Video" /></div>
+                </div>
+              </div><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_13" id="sublabel_input_13" style="min-height:13px" aria-hidden="false">Ignore when working with website</label></span>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  <div class="section-body">
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <a href="">Falcon Apps Company</a>
+                </div>
+                <div class="col-md-6 col-sm-12 text-md-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="doc/index.html">Documentation</a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>    
+</div>
+
+
+<script src="bundles2/lib.vendor.bundle.js"></script>
+
+<script src="bundles2/apexcharts.bundle.js"></script>
+<script src="bundles2/counterup.bundle.js"></script>
+<script src="bundles2/knobjs.bundle.js"></script>
+<script src="bundles2/c3.bundle.js"></script>
+
+<script src="js2/core.js"></script>
+<script src="js2/page/project-index.js"></script>
+</body>
+
+<!-- soccer/project/  07 Jan 2020 03:37:22 GMT -->
+</html>

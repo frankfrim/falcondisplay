@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<!-- soccer/project/  07 Jan 2020 03:36:49 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+<title>Falcon Ads - Dashboard</title>
+
+<!-- Bootstrap Core and vandor -->
+<link rel="stylesheet" href="plugins2/bootstrap/css/bootstrap.min.css" />
+
+<!-- Plugins css -->
+<link rel="stylesheet" href="plugins2/charts-c3/c3.min.css"/>
+
+<!-- Core css -->
+<link rel="stylesheet" href="css2/main.css"/>
+<link rel="stylesheet" href="css2/theme1.css"/>
+</head>
+
+<body class="font-montserrat">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+
+<div id="main_content">
+
+    <div id="header_top" class="header_top">
+        <div class="container">
+            <div class="hleft">
+                <a class="header-brand" href="https://frankfrim.github.io/Juna-Store-KYC/"><i class="fa fa-soccer-ball-o brand-logo"></i></a>
+                <div class="dropdown">
+                 </div>
+            </div>
+            <div class="hright">
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
+                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <div id="rightsidebar" class="right_sidebar">
+        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
+        <div class="p-4">
+            <div class="mb-4">
+                <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
+                <div class="custom-controls-stacked font_setting">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-opensans">
+                        <span class="custom-control-label">Open Sans Font</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
+                        <span class="custom-control-label">Montserrat Google Font</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-roboto">
+                        <span class="custom-control-label">Robot Google Font</span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-4">
+                <h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
+                <div class="custom-controls-stacked arrow_option">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
+                        <span class="custom-control-label">A</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-b">
+                        <span class="custom-control-label">B</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-c" checked="">
+                        <span class="custom-control-label">C</span>
+                    </label>
+                </div>
+                <h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
+                <div class="custom-controls-stacked list_option">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-a" checked="">
+                        <span class="custom-control-label">A</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-b">
+                        <span class="custom-control-label">B</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-c">
+                        <span class="custom-control-label">C</span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
+                <ul class="setting-list list-unstyled mt-1 setting_switch">
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Night Mode</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Fix Navbar top</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Header Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader" checked="">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Min Sidebar Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Sidebar Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Icon Color</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Gradient Color</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Box Shadow</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">RTL Support</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Box Layout</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="d-block">Storage <span class="float-right">77%</span></label>
+                <div class="progress progress-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
+                </div>
+                <button type="button" class="btn btn-primary btn-block mt-3">Upgrade Storage</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme_div">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-group list-unstyled">
+                    <li class="list-group-item mb-2">
+                        <p>Default Theme</p>
+                        <a href="https://frankfrim.github.io/Juna-Store-KYC/"><img src="assets2/images/themes/default.png" class="img-fluid" /></a>
+                    </li>
+                    <li class="list-group-item mb-2">
+                        <p>Night Mode Theme</p>
+                        <a href="project-dark/index.html"><img src="assets2/images/themes/dark.png" class="img-fluid" /></a>
+                    </li>                    
+                    <li class="list-group-item mb-2">
+                        <p>RTL Version</p>
+                        <a href="project-rtl/index.html"><img src="assets2/images/themes/rtl.png" class="img-fluid" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+                <li>
+                   
+            </ul>
+        </div>
+    </div>
+
+    <div id="left-sidebar" class="sidebar ">
+        <h5 class="brand-name">Offer <a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+        <nav id="left-sidebar-nav" class="sidebar-nav">
+            <ul class="metismenu">
+                <li class="g_heading">Falcon Ads</li>
+                <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>                        
+                <li><a href="apk.html"><i class="fa fa-list-ol"></i><span>APK</span></a></li>
+                <li><a href="website.html"><i class="fa fa-list-ol"></i><span>Website and YouTube</span></a></li>
+   
+                <li>
+                    <a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-lock"></i><span>Authentication</span></a>
+                    <ul>
+                        
+                        <li><a href="register.html">Get Search ID</a></li>
+                           
+                    </ul>
+                </li>
+             </ul>
+        </nav>        
+    </div>
+
+    <div class="page">
+        <div id="page_top" class="section-body top_dark">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
+                        <h1 class="page-title">Dashboard</h1>                        
+                    </div>
+                    <div class="right">
+                        <div class="input-icon xs-hide mr-4">
+                          </div>
+                        <div class="notification d-flex">
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="assets2/images/flags/us.svg">English</a>
+                                    <div class="dropdown-divider"></div>
+                                       </div>
+                            </div>
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <ul class="right_chat list-unstyled w350 p-0">
+                                        <li class="online">
+                                                <div class="media-body">
+                                             </div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                                 <div class="">
+                                            </div>
+                                            </a>                            
+                                        </li>
+                                        <li class="offline">
+                                                <div class="">
+                                                 </div>
+                                            </a>                            
+                                        </li>
+                                        <li class="online">
+                                                 <div class="">
+                                                </div>
+                                            </a>                            
+                                        </li>                        
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                            </div>
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-primary nav-unread"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <ul class="list-unstyled feeds_widget">
+                                        <li>
+                                            <div class="feeds-left"></div>
+                                            <div class="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                              </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                             </div>
+                                        </li>
+                                        <li>
+                                            <div class=""></i></div>
+                                            <div class="">
+                                              </div>
+                                        </li>                                   
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle=""></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body mt-3">
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="mb-4">
+                            <h4>Welcome to Falcon Ads</h4>
+                            <small>You could get your content monetize here. <a href="https://falconappscompany.blogspot.com">Learn More</a></small>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row clearfix row-deck">
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Clicks</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">0</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Views</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">0</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Impressions</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">0</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Requests</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">0</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Open Requests</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">0</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Reviews</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">0</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.44339" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.44339" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.44339" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/7207d249b7d/for-form-branding-footer.js?v=3.3.44339" type="text/javascript" defer></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.newPaymentUI = true;
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex',0);
+      JotForm.alterTexts(undefined);
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Request for Performance","type":"control_head"},{"name":"submit2","qid":"2","text":"Request Preview","type":"control_button"},{"description":"","name":"email","qid":"3","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"searchId","qid":"4","subLabel":"","text":"Search ID","type":"control_textbox"},{"description":"","name":"periodOf","qid":"5","text":"Period of Displaying","type":"control_radio"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.44339"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.44339" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.44339" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/donationBox.css?v=3.3.44339">
+<form class="jotform-form" action="https://submit.jotform.com/submit/232248051034041" method="post" name="form_232248051034041" id="232248051034041" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="232248051034041" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httac htvam">
+            <h1 id="header_1" class="form-header" data-component="header">Request for Performance</h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_3"><label class="form-label form-label-top form-label-auto" id="label_3" for="input_3"> Email<span class="form-required">*</span> </label>
+        <div id="cid_3" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_3" name="q3_email" class="form-textbox validate[required, Email]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_3 sublabel_input_3" required="" /><label class="form-sub-label" for="input_3" id="sublabel_input_3" style="min-height:13px" aria-hidden="false">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textbox" id="id_4"><label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> Search ID<span class="form-required">*</span> </label>
+        <div id="cid_4" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_4" name="q4_searchId" data-type="input-textbox" class="form-textbox validate[required]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_4" required="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_radio" id="id_5"><label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> Period of Displaying </label>
+        <div id="cid_5" class="form-input-wide" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_5" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_5" class="form-radio" id="input_5_0" name="q5_periodOf" value="Daily" /><label id="label_input_5_0" for="input_5_0">Daily</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_5" class="form-radio" id="input_5_1" name="q5_periodOf" value="A week" /><label id="label_input_5_1" for="input_5_1">A week</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_5" class="form-radio" id="input_5_2" name="q5_periodOf" value="A month" /><label id="label_input_5_2" for="input_5_2">A month</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_5" class="form-radio" id="input_5_3" name="q5_periodOf" value="A year" /><label id="label_input_5_3" for="input_5_3">A year</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_5" class="form-radio" id="input_5_4" name="q5_periodOf" value="All" /><label id="label_input_5_4" for="input_5_4">All</label></span><span class="form-radio-item formRadioOther" style="clear:left"><input type="radio" class="form-radio-other form-radio" name="q5_periodOf" id="other_5" value="other" tabindex="0" aria-label="Other" /><label id="label_other_5" style="text-indent:0" for="other_5">Other</label><span id="other_5_input" class="other-input-container" style="display:none"><input type="text" class="form-radio-other-input form-textbox" name="q5_periodOf[other]" data-otherhint="Other" size="15" id="input_5" data-placeholder="Please type another option here" placeholder="Please type another option here" /></span></span></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="center" class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Request Preview</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  
+        <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <a href="">Falcon Apps Company</a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="doc/index.html">Documentation</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>    
+</div>
+
+
+<script src="bundles2/lib.vendor.bundle.js"></script>
+
+<script src="bundles2/apexcharts.bundle.js"></script>
+<script src="bundles2/counterup.bundle.js"></script>
+<script src="bundles2/knobjs.bundle.js"></script>
+<script src="bundles2/c3.bundle.js"></script>
+
+<script src="js2/core.js"></script>
+<script src="js2/page/project-index.js"></script>
+</body>
+
+<!-- soccer/project/  07 Jan 2020 03:37:22 GMT -->
+</html>
